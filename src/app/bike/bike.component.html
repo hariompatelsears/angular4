@@ -1,0 +1,9 @@
+<h1> Bike List </h1>
+
+<ul style = "padding : 20px 0 0 25px;float:left">
+  <li *ngFor="let bike of bikes">
+    <a  routerLink="/bikes/bikedetail/{{bike.id}}" routerLinkActive="active"  > {{bike.model}}</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+

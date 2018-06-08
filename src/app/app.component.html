@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div id="wrapper"> 
+<app-header></app-header>
+  <div id="page_content">
+	<app-topnavigation></app-topnavigation>
+    <app-leftpanel></app-leftpanel>
+	<router-outlet></router-outlet>
+    <div class="clear"></div>
+    <!--start footer from here-->
+	<app-footer></app-footer>
+  </div>
+</div>
